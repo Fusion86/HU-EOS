@@ -5,4 +5,4 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-find $1 -iname "*.jpg" -exec sh -c 'magick convert "{}" $(basename "{}").png' \;
+find $1 -iname "*.jpg" -exec sh -c 'magick convert "{}" -resize 128x128 $(basename "{}").png' \;
