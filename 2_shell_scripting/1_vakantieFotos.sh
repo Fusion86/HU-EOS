@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if [ -z "$1" ]; then
-echo "Geef een bron map als argument mee";
-exit 1
+    echo "Geef een bron map als argument mee";
+    exit 1
 fi
 
 mkdir -p Afbeeldingen/Vakantie
